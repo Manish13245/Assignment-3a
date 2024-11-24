@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the main content */
+  .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Input container layout */
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* To-Do input field */
+  #todo-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Adding button */
+  #add-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for Add button */
+  #add-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* To-Do List Styling */
+  #todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+  }
+  
+  /* Completed To-Do item */
+  .todo-item.completed {
+    text-decoration: line-through;
+    color: #555;
+    background-color: lightgreen;
+  }
+  
+  /* Delete Animation */
+  .todo-item {
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .todo-item.deleting {
+    background-color: lightcoral;
+    opacity: 0;
+  }
+  
+  /* Delete Button Styles */
+  .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for Delete button */
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
